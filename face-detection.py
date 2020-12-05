@@ -13,7 +13,6 @@ known_face_names = []
 face_locations = []
 face_encodings = []
 face_names = []
-process_this_frame = True
 
 
 def haar_cascades(img):
