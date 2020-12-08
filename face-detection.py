@@ -8,12 +8,6 @@ video_capture = cv.VideoCapture(0, cv.CAP_DSHOW)
 
 haar_cascade = cv.CascadeClassifier('haarcascade_frontalface_default.xml')
 
-known_face_encodings = []
-known_face_names = []
-face_locations = []
-face_encodings = []
-face_names = []
-
 
 def haar_cascades(img):
     gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
@@ -37,6 +31,9 @@ def face_recognition_dlib(img):
 
 while True:
     ret, frame = video_capture.read()
+    if ret == False:
+        break
+
     small_frame = cv.resize(frame, (frame.shape[1]//2, frame.shape[0]//2))
     haar_results = small_frame.copy()
     face_recognition_results = small_frame.copy()
