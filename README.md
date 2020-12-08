@@ -1,3 +1,3 @@
-# OpenCV: Face Detection
+# OpenCV & dlib: Face Detection
 
-Project built in Python with OpenCV. Detect faces in from webcam using Haar Cascades and dlib Face Recognition.
+Project built in Python with OpenCV and dlib. Detect faces from webcam using Haar Cascades and dlib Face Recognition.
